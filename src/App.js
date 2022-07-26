@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import MainContainer from "./components/MainContainer";
+import YourMobileContents from "./subcomponents/YourMobileContents";
+import businessman from "./assets/businessman.svg";
+import profgirl from "./assets/profgirl.svg";
+import businessmanBlue from "./assets/businessmanBlue.svg";
+import blacktag from "./assets/blacktag.svg";
+import businesswomanLaptop from "./assets/businesswomanLaptop.svg";
+import EnterCode from "./subcomponents/EnterCode";
+import WhatshouldCall from "./subcomponents/WhatshouldCall";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <MainContainer
+        midComponent={<YourMobileContents />}
+        downimg={businessman}
+      /> */}
+      {/* <MainContainer midComponent={<EnterCode />} downimg={profgirl} /> */}
+      <MainContainer
+        midComponent={<WhatshouldCall />}
+        downimg={businessmanBlue}
+      />
+      {/* <MainContainer midComponent downimg={blacktag} />
+      <MainContainer midComponent downimg={businesswomanLaptop} /> */}
     </div>
   );
 }
